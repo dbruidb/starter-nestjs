@@ -13,7 +13,6 @@ const app_service_1 = require("./app.service");
 const typeorm_1 = require("@nestjs/typeorm");
 const typeorm_service_1 = require("./typeorm/typeorm.service");
 const tournament_module_1 = require("./tournament/tournament.module");
-const config_1 = require("@nestjs/config");
 const banlist_module_1 = require("./banlist/banlist.module");
 const results_module_1 = require("./results/results.module");
 const players_module_1 = require("./players/players.module");
@@ -37,10 +36,6 @@ exports.AppModule = AppModule = __decorate([
             playersScoreView_module_1.PlayersScoreViewModule,
             auth_module_1.AuthModule,
             users_module_1.UsersModule,
-            config_1.ConfigModule.forRoot({
-                envFilePath: '.env',
-                isGlobal: true
-            }),
             typeorm_1.TypeOrmModule.forRootAsync({
                 useClass: typeorm_service_1.TypeormService
             })

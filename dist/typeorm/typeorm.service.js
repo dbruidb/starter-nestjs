@@ -11,14 +11,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TypeormService = void 0;
 const common_1 = require("@nestjs/common");
-const config_1 = require("@nestjs/config");
 let TypeormService = class TypeormService {
-    constructor(configService) {
-        this.configService = configService;
+    constructor() {
     }
     createTypeOrmOptions() {
         return {
-            type: 'mysql',
+            type: 'postgres',
             host: process.env.DB_HOST,
             port: Number(process.env.DB_PORT),
             username: process.env.DB_USERNAME,
@@ -33,6 +31,6 @@ let TypeormService = class TypeormService {
 exports.TypeormService = TypeormService;
 exports.TypeormService = TypeormService = __decorate([
     (0, common_1.Injectable)(),
-    __metadata("design:paramtypes", [config_1.ConfigService])
+    __metadata("design:paramtypes", [])
 ], TypeormService);
 //# sourceMappingURL=typeorm.service.js.map

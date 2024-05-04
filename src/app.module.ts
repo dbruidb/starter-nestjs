@@ -28,11 +28,7 @@ import { UsersModule } from './users/users.module';
     PlayersScoreViewModule,
     AuthModule,     
     UsersModule,
-    ConfigModule.forRoot({
-      envFilePath:'.env',
-      isGlobal:true
-    }),
-    
+   
     TypeOrmModule.forRootAsync({
       useClass: TypeormService
     })
