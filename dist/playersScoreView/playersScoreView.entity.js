@@ -44,7 +44,7 @@ exports.PlayersScoreViewEntity = PlayersScoreViewEntity = __decorate([
     p.name AS player_name,
     p.picture AS picture,
     r.format as format,
-    sum(r.points) AS total_points
+    sum(r.sets_winned + r.games_winned) AS total_points
     FROM
         tbl_players_nrex p
     JOIN
