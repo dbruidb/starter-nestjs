@@ -5,7 +5,7 @@ const app_module_1 = require("./app.module");
 async function bootstrap() {
     const app = await core_1.NestFactory.create(app_module_1.AppModule);
     app.enableCors({
-        origin: ["http://nrex-league.x10.mx", "*"],
+        origin: ["*"],
         methods: ["GET", "POST"],
         credentials: true
     });
