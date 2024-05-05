@@ -13,7 +13,7 @@ export class UserEntity{
     username: string
     @Column({type: "varchar", length:20})
     password: string
-    @Column({type:"enum", enum: Role, default:"Client"})
+    @Column({type:"enum", enum: Role, default: Role.CLIENT})
     role: string
 
 }

@@ -28,7 +28,7 @@ __decorate([
     __metadata("design:type", String)
 ], UserEntity.prototype, "password", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ type: "enum", enum: role_enum_1.Role, default: "Client" }),
+    (0, typeorm_1.Column)({ type: "enum", enum: role_enum_1.Role, default: role_enum_1.Role.CLIENT }),
     __metadata("design:type", String)
 ], UserEntity.prototype, "role", void 0);
 exports.UserEntity = UserEntity = __decorate([
