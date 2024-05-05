@@ -42,11 +42,19 @@ __decorate([
 __decorate([
     (0, typeorm_1.ViewColumn)(),
     __metadata("design:type", Number)
-], ResultsViewEntity.prototype, "place", void 0);
+], ResultsViewEntity.prototype, "sets_played", void 0);
 __decorate([
     (0, typeorm_1.ViewColumn)(),
     __metadata("design:type", Number)
-], ResultsViewEntity.prototype, "points", void 0);
+], ResultsViewEntity.prototype, "sets_winned", void 0);
+__decorate([
+    (0, typeorm_1.ViewColumn)(),
+    __metadata("design:type", Number)
+], ResultsViewEntity.prototype, "games_played", void 0);
+__decorate([
+    (0, typeorm_1.ViewColumn)(),
+    __metadata("design:type", Number)
+], ResultsViewEntity.prototype, "games_winned", void 0);
 __decorate([
     (0, typeorm_1.ViewColumn)(),
     __metadata("design:type", String)
@@ -62,8 +70,10 @@ exports.ResultsViewEntity = ResultsViewEntity = __decorate([
         p.picture AS "picture",
         t.picture AS "t_picture",
         t.name AS "tournament_name",
-        r.place AS "place",
-        r.points AS "points",
+        r.sets_played AS "sets_played",
+        r.sets_winned AS "sets_winned",
+        r.games_played AS "games_played",
+        r.games_winned AS "games_winned",
         r.format AS format
         
     FROM

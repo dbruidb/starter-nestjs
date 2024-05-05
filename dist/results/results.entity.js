@@ -36,11 +36,19 @@ __decorate([
 __decorate([
     (0, typeorm_1.Column)({ type: "int" }),
     __metadata("design:type", Number)
-], ResultsEntity.prototype, "place", void 0);
+], ResultsEntity.prototype, "sets_winned", void 0);
 __decorate([
     (0, typeorm_1.Column)({ type: "int" }),
     __metadata("design:type", Number)
-], ResultsEntity.prototype, "points", void 0);
+], ResultsEntity.prototype, "game_winned", void 0);
+__decorate([
+    (0, typeorm_1.Column)({ type: "int" }),
+    __metadata("design:type", Number)
+], ResultsEntity.prototype, "sets_played", void 0);
+__decorate([
+    (0, typeorm_1.Column)({ type: "int" }),
+    __metadata("design:type", Number)
+], ResultsEntity.prototype, "games_played", void 0);
 __decorate([
     (0, typeorm_1.ManyToOne)(() => players_entity_1.PlayersEntity, (player) => player.results),
     (0, typeorm_1.JoinColumn)({ name: "id_player_fk", foreignKeyConstraintName: "tbl_results_fk_tbl_player_id_player" }),

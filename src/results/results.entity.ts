@@ -21,10 +21,18 @@ export class ResultsEntity{
     format: formats
 
     @Column({type: "int"})
-    place: number
+    sets_winned: number
 
     @Column({type: "int"})
-    points: number
+    game_winned: number
+
+    @Column({type: "int"})
+    sets_played: number
+
+    @Column({type: "int"})
+    games_played: number
+
+
 
 
     @ManyToOne(()=> PlayersEntity, (player)=> player.results)
