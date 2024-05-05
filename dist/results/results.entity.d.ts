@@ -7,7 +7,7 @@ export declare class ResultsEntity {
     id_tournament_fk: number;
     format: formats;
     sets_winned: number;
-    game_winned: number;
+    games_winned: number;
     sets_played: number;
     games_played: number;
     player: PlayersEntity;

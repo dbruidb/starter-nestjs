@@ -24,7 +24,7 @@ export class ResultsEntity{
     sets_winned: number
 
     @Column({type: "int"})
-    game_winned: number
+    games_winned: number
 
     @Column({type: "int"})
     sets_played: number

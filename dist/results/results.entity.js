@@ -40,7 +40,7 @@ __decorate([
 __decorate([
     (0, typeorm_1.Column)({ type: "int" }),
     __metadata("design:type", Number)
-], ResultsEntity.prototype, "game_winned", void 0);
+], ResultsEntity.prototype, "games_winned", void 0);
 __decorate([
     (0, typeorm_1.Column)({ type: "int" }),
     __metadata("design:type", Number)
