@@ -23,11 +23,7 @@ export class TypeormService implements TypeOrmOptionsFactory{
 
         return {
             type: 'postgres',
-            host: 'user-prod-us-east-2-1.cluster-cfi5vnucvv3w.us-east-2.rds.amazonaws.com',
-            port:  5432,
-            username:  'zc-tournaments-main-db-0efa305efb27bd039',
-            password:  'kZWGaX3h7VcFReASyFQMkfh5mFS21k',
-            database: 'zc-tournaments-main-db-0efa305efb27bd039',
+            url: process.env.DATABASE_URL,
             entities: [__dirname + '/../**/*.entity{.js,.ts}'],
             synchronize: true,
             logging: true
